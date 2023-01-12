@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('coba');
+});
 
 Route::get('/Home', function () {
     return ('Halaman Home');
@@ -28,3 +28,8 @@ Route::get('/About', function () {
 Route::get('/Blog', function () {
     return ('Halaman Blog');
 });
+
+// Route::get('/coba', function () {
+//     return view('coba');
+// });
+

@@ -42,13 +42,16 @@
       </div>
 
       <div class="jumbotron bg-dark text-light">
-        <h1 class="display-4">Join!</h1>
+        <div class="container">
+            <h1 class="display-4">Join!</h1>
         <p class="lead">Kami mengembangkan projek bersama-sama</p>
         <hr class="my-3">
         <p>Join komunitas kami SEKARANG!</p>
         <p class="lead">
           <a class="btn btn-primary btn-lg" href="#" role="button">Join</a>
         </p>
+        </div>
+        
       </div>
 </body>
 </html>

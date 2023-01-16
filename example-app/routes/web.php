@@ -14,22 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('coba');
+    return view('welcome');
 });
 
-Route::get('/Home', function () {
-    return ('Halaman Home');
+Route::get('/belajar', function(){
+    echo '<h1>Hello World</h1>';
+    echo '<p>Sedang belajar laravel</p>';
 });
 
-Route::get('/About', function () {
-    return ('Halaman About');
+Route::get('/siswa/smkbpi/rpl', function () {
+    echo '<h2 style="text-align: center;"><u>Welcome to 11 RPL</u></h2>';
 });
 
-Route::get('/Blog', function () {
-    return ('Halaman Blog');
+Route::get('siswa/{rizky}', function ($rizky){
+    return "tampilkan data siswa bernama $rizky";
 });
-
-// Route::get('/coba', function () {
-//     return view('coba');
-// });
 

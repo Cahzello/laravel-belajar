@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/profile', function () {
+    return view('profile');
+});
+
 Route::get('/belajar', function(){
     echo '<h1>Hello World</h1>';
     echo '<p>Sedang belajar laravel</p>';
@@ -28,5 +32,9 @@ Route::get('/siswa/smkbpi/rpl', function () {
 
 Route::get('siswa/{rizky}', function ($rizky){
     return "tampilkan data siswa bernama $rizky";
+});
+
+Route::get('stok_barang/{jenis}/{merek}', function ($jenis,$merek) {
+    return "Cek sisa stok untuk $jenis $merek";
 });
 
